@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/estilo.css" />
+    <link rel="stylesheet" href="css/estilo.css" />
 
     <script
       src="https://kit.fontawesome.com/880f629fe4.js"
@@ -44,8 +44,8 @@
             <img src="/img/1.png" alt="" uk-cover />
             <div
               class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center">
-              <div class="typing">
-                <h1 class="slogan">
+              <div id="slogan-carrossel">
+                <h1 id="slogan">
                   <span style="color: #fff">Unindo</span>
                   <span style="color: #15ecd0">soluções,</span>
                   <span style="color: #fff">para</span>
@@ -86,91 +86,114 @@
 
       <h1 id="efeito">Escalas de Cores</h1>
 
-      <div class="cores1">
-        <div class="item1">#000000 - Black</div>
-        <div class="item2">#1c1c1c - Grey11</div>
-        <div class="item3">#363636 - Grey21</div>
-        <div class="item4">#4f4f4f - Grey31</div>
-        <div class="item5">#696969- DimGray</div>
+      <div class="linha">
+        <div class="item-paleta" id="item1"><p>#000000 - Black</p></div>
+        <div class="item-paleta" id="item2"><p>#1c1c1c - Grey11</p></div>
+        <div class="item-paleta" id="item3"><p>#363636 - Grey21</p></div>
+        <div class="item-paleta" id="item4"><p>#4f4f4f - Grey31</p></div>
+        <div class="item-paleta" id="item5"><p>#696969- DimGray</p></div>
       </div>
-      <div class="cores2">
-        <div class="item6">#808080 - Gray</div>
-        <div class="item7">#a9a9a9 - DarkGray</div>
-        <div class="item8">#c0c0c0 - Silver</div>
-        <div class="item9">#d3d3d3 - LightGrey</div>
-        <div class="item10">#dcdcdc - Gainsboro</div>
+      <div class="linha">
+        <div class="item-paleta" id="item6"><p>#808080 - Gray</p></div>
+        <div class="item-paleta" id="item7"><p>#a9a9a9 - DarkGray</p></div>
+        <div class="item-paleta" id="item8"><p>#c0c0c0 - Silver</p></div>
+        <div class="item-paleta" id="item9"><p>#d3d3d3 - LightGrey</p></div>
+        <div class="item-paleta" id="item10"><p>#dcdcdc - Gainsboro</p></div>
       </div>
-      <div class="cores3">
-        <div class="item11">#6a5acd - SlateBlue</div>
-        <div class="item12">#836fff - SlateBlue1</div>
-        <div class="item13">#6959cd- SlateBlue3</div>
-        <div class="item14">#483d8b - DarkSlateBlue</div>
-        <div class="item15">#191970 - MidnightBlue</div>
-      </div>
-      <div class="cores4">
-        <div class="item1">#FFFF - Branco</div>
-        <div class="item1">#FFFF - Branco</div>
-        <div class="item1">#FFFF - Branco</div>
-        <div class="item1">#FFFF - Branco</div>
-        <div class="item1">#FFFF - Branco</div>
-      </div>
-      <div class="cores5">
-        <div class="item1">#FFFF - Branco</div>
-        <div class="item1">#FFFF - Branco</div>
-        <div class="item1">#FFFF - Branco</div>
-        <div class="item1">#FFFF - Branco</div>
-        <div class="item1">#FFFF - Branco</div>
-      </div>
-      <div class="cores6">
-        <div class="item1">#FFFF - Branco</div>
-        <div class="item1">#FFFF - Branco</div>
-        <div class="item1">#FFFF - Branco</div>
-        <div class="item1">#FFFF - Branco</div>
-        <div class="item1">#FFFF - Branco</div>
-      </div>
-      <div class="cores7">
-        <div class="item1">#FFFF - Branco</div>
-        <div class="item1">#FFFF - Branco</div>
-        <div class="item1">#FFFF - Branco</div>
-        <div class="item1">#FFFF - Branco</div>
-        <div class="item1">#FFFF - Branco</div>
-      </div>
-      <div class="cores8">
-        <div class="item1">#FFFF - Branco</div>
-        <div class="item1">#FFFF - Branco</div>
-        <div class="item1">#FFFF - Branco</div>
-        <div class="item1">#FFFF - Branco</div>
-        <div class="item1">#FFFF - Branco</div>
-      </div>
-      <div class="cores9">
-        <div class="item1">#FFFF - Branco</div>
-        <div class="item1">#FFFF - Branco</div>
-        <div class="item1">#FFFF - Branco</div>
-        <div class="item1">#FFFF - Branco</div>
-        <div class="item1">#FFFF - Branco</div>
-      </div>
-      <div class="cores10">
-        <div class="item1">#FFFF - Branco</div>
-        <div class="item1">#FFFF - Branco</div>
-        <div class="item1">#FFFF - Branco</div>
-        <div class="item1">#FFFF - Branco</div>
-        <div class="item1">#FFFF - Branco</div>
-      </div>
-      <footer>
-        <div class="rede_social">
-          <a href="#" class="links">
-            <i class="fa-brands fa-linkedin linkedin"></i>
-          </a>
-          <a href="#" class="links">
-            <i class="fa-brands fa-square-instagram instagram"></i>
-          </a>
-          <a href="#" class="links">
-            <i class="fa-brands fa-square-github github"></i>
-          </a>
+      <div class="linha">
+        <div class="item-paleta" id="item11"><p>#6a5acd - SlateBlue</p></div>
+        <div class="item-paleta" id="item12"><p>#836fff - SlateBlue1</p></div>
+        <div class="item-paleta" id="item13"><p>#6959cd- SlateBlue3</p></div>
+        <div class="item-paleta" id="item14">
+          <p>#483d8b - DarkSlateBlue</p>
         </div>
-      </footer>
+        <div class="item-paleta" id="item15"><p>#191970 - MidnightBlue</p></div>
+      </div>
+      <div class="linha">
+        <div class="item-paleta" id="item16"><p>#000080 - Navy</p></div>
+        <div class="item-paleta" id="item17"><p>#00008B - DarkBlue</p></div>
+        <div class="item-paleta" id="item18"><p>#0000CD - MediumBlue</p></div>
+        <div class="item-paleta" id="item19"><p>#0000FF - Blue</p></div>
+        <div class="item-paleta" id="item20">
+          <p>#6495ED - CornflowerBlue</p>
+        </div>
+      </div>
+      <div class="linha">
+        <div class="item-paleta" id="item21"><p>#4169E1 - RoyalBlue</p></div>
+        <div class="item-paleta" id="item22"><p>#1E90FF - DodgerBlue</p></div>
+        <div class="item-paleta" id="item23"><p>#00BFFF - DeepSkyBlue</p></div>
+        <div class="item-paleta" id="item24"><p>#87CEFA - LightSkyBlue</p></div>
+        <div class="item-paleta" id="item25"><p>#87CEEB - SkyBlue</p></div>
+      </div>
+      <div class="linha">
+        <div class="item-paleta" id="item26"><p>#ADD8E6 - LightBlue</p></div>
+        <div class="item-paleta" id="item27"><p>#4682B4 - SteelBlue</p></div>
+        <div class="item-paleta" id="item28">
+          <p>#B0C4DE - LightSteelBlue</p>
+        </div>
+        <div class="item-paleta" id="item29"><p>#708090 - SlateGray</p></div>
+        <div class="item-paleta" id="item30">
+          <p>#778899 - LightSlateGray</p>
+        </div>
+      </div>
+      <div class="linha">
+        <div class="item-paleta" id="item31"><p>#00FFFF - Aqua / Cyan</p></div>
+        <div class="item-paleta" id="item32">
+          <p>#00CED1 - DarkTurquoise</p>
+        </div>
+        <div class="item-paleta" id="item33"><p>#40E0D0 - Turquoise</p></div>
+        <div class="item-paleta" id="item34">
+          <p>#48D1CC - MediumTurquoise</p>
+        </div>
+        <div class="item-paleta" id="item35">
+          <p>#20B2AA - LightSeaGreen</p>
+        </div>
+      </div>
+      <div class="linha">
+        <div class="item-paleta" id="item36"><p>#008B8B - DarkCyan</p></div>
+        <div class="item-paleta" id="item37"><p>#008080 - Teal</p></div>
+        <div class="item-paleta" id="item38"><p>#7FFFD4 - Aquamarine</p></div>
+        <div class="item-paleta" id="item39">
+          <p>#66CDAA - MediumAquamarine</p>
+        </div>
+        <div class="item-paleta" id="item40"><p>#5F9EA0 - CadetBlue</p></div>
+      </div>
+      <div class="linha">
+        <div class="item-paleta" id="item41">
+          <p>#2F4F4F - DarkSlateGray</p>
+        </div>
+        <div class="item-paleta" id="item42">
+          <p>#00FA9A - MediumSpringGreen</p>
+        </div>
+        <div class="item-paleta" id="item43"><p>#00FF7F - SpringGreen</p></div>
+        <div class="item-paleta" id="item44"><p>#98FB98 - PaleGreen</p></div>
+        <div class="item-paleta" id="item45"><p>#90EE90 - LightGreen</p></div>
+      </div>
+      <div class="linha">
+        <div class="item-paleta" id="item46"><p>#8FBC8F - DarkSeaGreen</p></div>
+        <div class="item-paleta" id="item47">
+          <p>#3CB371 - MediumSeaGreen</p>
+        </div>
+        <div class="item-paleta" id="item48"><p>#2E8B57 - SeaGreen</p></div>
+        <div class="item-paleta" id="item49"><p>#006400 - DarkGreen</p></div>
+        <div class="item-paleta" id="item50"><p>#008000 - Green</p></div>
+      </div>
     </main>
+    <footer>
+      <div class="rede_social">
+        <a href="#" class="links">
+          <i class="fa-brands fa-linkedin linkedin"></i>
+        </a>
+        <a href="#" class="links">
+          <i class="fa-brands fa-square-instagram instagram"></i>
+        </a>
+        <a href="#" class="links">
+          <i class="fa-brands fa-square-github github"></i>
+        </a>
+      </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.16.3/dist/js/uikit.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.16.3/dist/js/uikit-icons.min.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
