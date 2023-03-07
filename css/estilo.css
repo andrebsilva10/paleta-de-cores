@@ -26,25 +26,7 @@ main {
 }
 
 /* definições menu */
-#slogan-carrossel {
-  animation: typing 3s steps(22), blink 0.5s step-end infinite alternate;
 
-  width: 65%;
-  white-space: nowrap;
-  overflow: hidden;
-
-  border-right: 3px solid;
-}
-@keyframes typing {
-  from {
-    width: 0;
-  }
-}
-@keyframes blink {
-  50% {
-    border-color: transparent;
-  }
-}
 .menu {
   display: flex;
 
@@ -56,7 +38,7 @@ main {
 }
 #texto-menu:hover,
 #texto-menu2:hover {
-  color: #15ecd0;
+  color: #747978;
   opacity: 2;
   transform: 5s;
 }
@@ -65,11 +47,10 @@ main {
   /*   font-size: 3vmin;
  */
   cursor: pointer;
-}
-.texto-menu,
-.texto-menu2 {
   display: flex;
+  color: #15ecd0;
 }
+
 #imagem-menu {
   max-width: 20px;
 }
@@ -571,8 +552,20 @@ footer {
   color: #2b3033;
 }
 
-@media screen and (max-width: 900px) {
   #conteudo-principal {
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  }
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));  
+    }
+
+/* scroll */
+::-webkit-scrollbar {
+  width: 18px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 35px;
+  background-color: #1b1b1b;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 35px;
+  background-color: #15ecd0;
 }
