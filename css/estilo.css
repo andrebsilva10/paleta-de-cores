@@ -11,6 +11,21 @@
   --cor-hover: linear-gradient(to right, #3dbea1, #267f9f, #1e6a9d);
   --cor-menu: #1b1b1b;
 }
+
+/* scroll */
+::-webkit-scrollbar {
+  width: 18px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 35px;
+  background-color: #1b1b1b;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 35px;
+  background-color: #15ecd0;
+}
+
 body p {
   color: var(--claro);
   margin: 0;
@@ -556,18 +571,4 @@ footer {
   #conteudo-principal {
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   }
-}
-
-/* scroll */
-::-webkit-scrollbar {
-  width: 18px;
-}
-
-::-webkit-scrollbar-track {
-  border-radius: 35px;
-  background-color: #1b1b1b;
-}
-::-webkit-scrollbar-thumb {
-  border-radius: 35px;
-  background-color: #15ecd0;
 }
