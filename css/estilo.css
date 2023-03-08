@@ -12,17 +12,32 @@
   --cor-menu: #1b1b1b;
 }
 
-main {
-  padding: 0 10%;
-  background-color: var(--claro-secundario);
+/* scroll */
+::-webkit-scrollbar {
+  width: 18px;
 }
 
-p {
+::-webkit-scrollbar-track {
+  border-radius: 35px;
+  background-color: #1b1b1b;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 35px;
+  background-color: #15ecd0;
+}
+
+body p {
   color: var(--claro);
+  margin: 0;
 }
 
 .texto-escuro {
   color: var(--escuro);
+}
+
+main {
+  padding: 0 10%;
+  background-color: var(--claro-secundario);
 }
 
 /* definições menu */
@@ -44,7 +59,8 @@ p {
 }
 #texto-menu,
 #texto-menu2 {
-  font-size: 3vmin;
+  /*   font-size: 3vmin;
+ */
   cursor: pointer;
   display: flex;
   color: #15ecd0;
@@ -54,34 +70,37 @@ p {
   max-width: 20px;
 }
 /* conteudo main */
-.linha {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 1em;
-}
 #titulo {
-  cursor: pointer;
-
-  background: #ffff;
   text-align: center;
-  color: #000000;
+
+  margin: 1rem 0;
 }
 #titulo:hover {
   background: var(--cor-hover);
   text-align: center;
   transition: 0.7s;
-  color: #e5e5e5;
-  opacity: 2;
+  color: var(--claro-secundario);
+
   border-radius: 15px 8px 15px 8px;
 }
 
-.item-paleta {
-  text-align: center;
+#conteudo-principal {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1em;
+  justify-content: center;
+  margin-bottom: 1em;
+}
+
+.cartao {
   border-radius: 5px 2px;
-  border: 1px solid var(--escuro);
-  padding: 20px;
-  cursor: pointer;
-  margin: 10px 0;
+
+  word-break: break-all;
+  padding: 1em;
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #item1 {
@@ -512,7 +531,7 @@ p {
 }
 
 .divisor {
-  height: 5vh;
+  height: 4em;
 
   border-left: 1px solid #e5e5e5;
 }
@@ -548,16 +567,8 @@ footer {
   color: #2b3033;
 }
 
-/* scroll */
-::-webkit-scrollbar {
-  width: 18px;
-}
-
-::-webkit-scrollbar-track {
-  border-radius: 35px;
-  background-color: #1b1b1b;
-}
-::-webkit-scrollbar-thumb {
-  border-radius: 35px;
-  background-color: #15ecd0;
+@media screen and (max-width: 900px) {
+  #conteudo-principal {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  }
 }
