@@ -552,9 +552,11 @@ footer {
   color: #2b3033;
 }
 
+@media screen and (max-width: 900px) {
   #conteudo-principal {
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));  
-    }
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  }
+}
 
 /* scroll */
 ::-webkit-scrollbar {
