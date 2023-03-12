@@ -64,18 +64,19 @@ main {
   cursor: pointer;
   display: flex;
   color: #15ecd0;
+  font-size: 20px;
 }
 
 #imagem-menu {
   max-width: 20px;
 }
 /* conteudo main */
-#titulo {
+.titulo {
   text-align: center;
 
   margin: 1rem 0;
 }
-#titulo:hover {
+.titulo:hover {
   background: var(--cor-hover);
   text-align: center;
   transition: 0.7s;
@@ -528,6 +529,40 @@ main {
 }
 #item142 {
   background-color: #f5fffa;
+}
+/* combinações de cores */
+.container {
+  height: 400px;
+  width: 220px;
+
+  position: relative;
+  perspective: 1000px;
+}
+.front,
+.back {
+  position: absolute;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  transition: all 1s ease;
+}
+.front {
+  transform: rotateY(0deg);
+}
+.back {
+  transform: rotateY(180deg);
+}
+.container:hover .front {
+  transform: rotateY(-180deg);
+}
+.container:hover .back {
+  transform: rotateY(0deg);
+}
+.tamanho_img {
+  width: 50%;
+}
+.combinacao {
+  display: flex;
+  justify-content: center;
 }
 
 .divisor {
