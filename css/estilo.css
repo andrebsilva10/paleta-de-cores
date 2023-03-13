@@ -49,6 +49,7 @@ main {
 
   width: 100%;
   justify-content: space-around;
+  align-items: end;
   padding: 10px;
 }
 #texto-menu:hover,
@@ -73,7 +74,7 @@ main {
 /* conteudo main */
 .titulo {
   text-align: center;
-
+  word-break: break-all;
   margin: 1rem 0;
 }
 .titulo:hover {
@@ -102,6 +103,13 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  transition: all 0.3s ease;
+}
+
+.cartao:hover {
+  box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.3);
+  scale: 1.02;
 }
 
 #item1 {
@@ -531,38 +539,48 @@ main {
   background-color: #f5fffa;
 }
 /* combinações de cores */
-.container {
-  height: 400px;
-  width: 220px;
-
+.combinacao-cores {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  margin-bottom: 2em;
+}
+.conteudo-imagem {
+  perspective: 500px;
   position: relative;
-  perspective: 1000px;
+  width: 200px;
+  height: 200px;
 }
-.front,
-.back {
+
+.imagem-frente,
+.imagem-atras {
   position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   backface-visibility: hidden;
-  transform-style: preserve-3d;
   transition: all 1s ease;
+  object-fit: contain;
+  border-radius: 15px 5px;
 }
-.front {
+
+.imagem-frente {
   transform: rotateY(0deg);
 }
-.back {
+.imagem-atras {
   transform: rotateY(180deg);
 }
-.container:hover .front {
+
+.conteudo-imagem:hover .imagem-frente {
   transform: rotateY(-180deg);
 }
-.container:hover .back {
+
+.conteudo-imagem:hover .imagem-atras {
   transform: rotateY(0deg);
-}
-.tamanho_img {
-  width: 50%;
-}
-.combinacao {
-  display: flex;
-  justify-content: center;
+  box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.3);
 }
 
 .divisor {
@@ -571,14 +589,16 @@ main {
   border-left: 1px solid #e5e5e5;
 }
 footer {
-  display: flex;
-
   background-color: var(--cor-menu);
-
+  text-align: center;
   width: 100%;
-  justify-content: space-around;
   padding: 10px;
 }
+
+#rede-social {
+  text-align: center;
+}
+
 .links i {
   font-size: 1.7em;
   transition: all 0.6s;
