@@ -8,7 +8,7 @@
   --claro: #f9faff;
   --claro-secundario: #f9faffea;
   --escuro: #1b1919c2;
-  --cor-hover: linear-gradient(to right, #3dbea1, #267f9f, #1e6a9d);
+  --cor-hover: linear-gradient(to right, #15ecd0, #eb9ded, #15ecd0);
   --cor-menu: #1b1b1b;
 }
 
@@ -81,7 +81,10 @@ main {
   background: var(--cor-hover);
   text-align: center;
   transition: 0.7s;
-  color: var(--claro-secundario);
+  color: wheat;
+
+  box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.3);
+  scale: 1.02;
 
   border-radius: 15px 8px 15px 8px;
 }
